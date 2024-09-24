@@ -6,8 +6,8 @@
   <title>반응형</title>
   <script src="https://kit.fontawesome.com/632d3e2496.js" crossorigin="anonymous"></script>
   <style>
-     /*root속성*/
-     :root{
+    /*root속성*/
+    :root{
       --bg-b-color:#263343;
       --bg-w-color:#efefef;
       --text-w-color:#f0f4f5;
@@ -22,6 +22,7 @@
       --font-small:14px;
       --font-micro:10px;
     }
+
     *{
       margin:0; padding:0;
       box-sizing: border-box;
@@ -46,33 +47,13 @@
       position:fixed;/*고정메뉴로 설정*/
       z-index: 1;
     }
-    
+
     header > .wrap{
       max-width:1200px;
       margin:0 auto;
       display:flex;
       justify-content: space-between;
       align-items: center;
-    }
-    .logo{
-      font-size:var(--font-medium);
-    }
-    .logo i{
-      font-size:var(--font-large);
-      color:var(--accent-color);
-    }
-
-    .gnb{
-      display:flex;
-    }
-
-    .gnb li{
-      margin:0 calc(var(--padding) * 2);
-      font-size:var(--font-medium);
-    }
-
-    .icon{
-      display:flex;
     }
 
   </style>
@@ -117,17 +98,6 @@
     </div>
 </section>
   <script>
-    //선택자
-    const toggleBtn = document.querySelector(".togglebtn");
-    const gnb = document.querySelector(".gnb");
-    const icon = document.querySelector(".icon");
-
-    //toggleBtn에 클릭이벤트 추가
-    toggleBtn.addEventListener("click",() => {
-      //gnb와 icon에 active클래스가 있으면 active클래스를 제거하고 없으면 추가
-      gnb.classList.toggle("active");
-      icon.classList.toggle("active");
-    })
-  </script>
+  
 </body>
 </html>
